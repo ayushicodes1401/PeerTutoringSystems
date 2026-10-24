@@ -184,6 +184,7 @@ public class LoginFrame extends JFrame {
                         "Login Failed", JOptionPane.ERROR_MESSAGE);
             }
         } catch (SQLException ex) {
+            ex.printStackTrace();
             JOptionPane.showMessageDialog(this,
                     "We couldn't connect to the database. Please try again later.",
                     "Database Error", JOptionPane.ERROR_MESSAGE);
